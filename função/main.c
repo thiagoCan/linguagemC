@@ -3,18 +3,23 @@
 
 int main(){
 
-    float calcularAreaRetangulo(float x, float y);
+    void teste();
 
-    float a=calcularAreaRetangulo(10, 20);
-
-    printf("A area eh: %.2f", a);
+    teste();
+    teste();
+    teste();
 
     return 0;
 }
 
-float calcularAreaRetangulo(float base, float altura){
+void teste(){
+    int variavel=2;
 
-    float area=base*altura;
+    variavel*=2;
 
-    return area;
+    static int variavelEstatica=2;
+    variavelEstatica*=2;
+
+    printf("%d\n", variavel);
+    printf("%d\n", variavelEstatica);
 }
